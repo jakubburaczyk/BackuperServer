@@ -64,7 +64,6 @@ public class Config {
         	is = new FileInputStream(propertyFile);
             prop1.load(is);   
             is.close();
-            
             port = Integer.parseInt(prop1.getProperty("port_nasluchiwania"));
         } catch (Exception e) {
 			OutputFrame.toError("Exception: " + e);
